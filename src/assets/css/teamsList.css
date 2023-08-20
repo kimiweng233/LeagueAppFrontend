@@ -1,0 +1,586 @@
+.teamCardWrapper:hover {
+    background-color: #305b70;
+    box-shadow: 0 0 20px #fff, 0 0 25px #65bdf0, 0 0 27px #2458ab,
+        0 0 30px #174082, 0 0 32px #0c2c61, inset 0 0 15px #fff,
+        inset 0 0 30px #65bdf0;
+}
+
+.teamCardWrapper:hover .cardTitleWrapper {
+    background-color: #27485a;
+    box-shadow: inset 0px 0px 15px black;
+}
+
+.teamCardWrapper:hover .teamDetailsWrapper {
+    background-color: #284457;
+    border-color: #486b81;
+    box-shadow: 6px 6px 5px #1d374f;
+}
+
+.teamCardWrapper:hover .memberBoardWrapper {
+    background-color: #c3e1e6;
+}
+
+.membersTable tr:hover td {
+    background-color: #dbe8fb24;
+}
+
+.memberBoardWrapper:active {
+    border-style: inset;
+}
+
+.teamsListWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.teamCardWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    background-color: #284e60;
+    padding: 30px;
+    margin-top: 50px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    border-width: 3px;
+    box-shadow: 0 0 10px #fff, 0 0 15px #65bdf0, 0 0 17px #2458ab,
+        0 0 20px #174082, 0 0 22px #0c2c61, inset 0 0 5px #fff,
+        inset 0 0 20px #65bdf0, inset 0 0 9px #2458ab, inset 0 0 11px #174082,
+        inset 0 0 13px #0c2c61;
+    color: white;
+}
+
+.teamStatsWrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.teamStats {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.teamButtons {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+.teamButtonOuterShadow {
+    border-radius: 10px;
+    box-shadow: 0px 6px 20px #06151e;
+}
+
+.teamButton {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    font-size: 1.7em;
+    color: white;
+    background-color: #6cb1d8;
+    border-color: #294250;
+    border-width: 6px;
+    border-style: solid;
+    border-radius: 10px;
+    white-space: nowrap;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+
+.teamButton:hover {
+    background-color: #78bde4;
+}
+
+.teamButton:active {
+    position: relative;
+    top: 6px;
+    border-bottom-width: 0px;
+}
+
+.teamButton:active .teamButtonOuterShadow {
+    box-shadow: 0px 4px 0px #06151e;
+}
+
+.teamButtonHighlight {
+    box-shadow: 0 0 3px #fff, 0 0 4px #a3ddff, 0 0 5px #65bdf0, 0 0 6px #2458ab,
+        0 0 7px #174082, 0 0 8px #0c2c61, inset 0 0 3px #fff,
+        inset 0 0 4px #a3ddff, inset 0 0 5px #65bdf0, inset 0 0 6px #2458ab,
+        inset 0 0 7px #174082;
+}
+
+.ButtonWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.ButtonIcon {
+    margin-left: 0.1em;
+    font-size: 1.1em;
+    position: relative;
+    top: 2px;
+}
+
+.roleIconsWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.roleIcons {
+    display: flex;
+    flex-direction: row;
+    background-color: #1e2e38;
+    border-style: inset;
+    border-color: #1a2a34;
+    padding: 5px;
+    align-items: fill;
+    margin-left: 10px;
+    position: relative;
+    bottom: 8px;
+}
+
+.positionIcon {
+    width: 30px;
+    height: 30px;
+    filter: grayscale(50%);
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.roleIconsWrapper div {
+    margin-top: 10px;
+}
+
+.teamDetailsWrapper {
+    display: flex;
+    flex-direction: row;
+    background-color: #253e4f;
+    border-style: outset;
+    border-color: #3d5b6e;
+    border-width: 3px;
+    box-shadow: 6px 6px 5px #142637;
+    padding: 10px;
+}
+
+.teamInfoWrapper {
+    width: 50%;
+}
+
+.teamAvgRankWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.avgRankText {
+    margin-left: 10px;
+    text-shadow: 0px 0px 10px rgb(177, 255, 254);
+}
+
+.cardTitleWrapper {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #203c4b;
+    background-image: url("../Textures/black-felt.png");
+    border-color: #285367;
+    border-style: inset;
+    border-width: 3px;
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 20px black;
+}
+
+.cardTitle {
+    text-shadow: 1px 1px 5px skyblue;
+    white-space: nowrap;
+}
+
+.blackText {
+    color: black;
+}
+
+.membersTableWrapper {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #1c3441;
+    border-style: inset;
+    border-color: #346a86;
+    border-radius: 10px;
+    border-width: 3px;
+    box-shadow: inset 0px 0px 20px #060a0b;
+}
+
+.membersTable {
+    width: 100%;
+    table-layout: auto;
+    text-shadow: 1px 1px 5px skyblue;
+    white-space: nowrap;
+    color: white;
+    text-transform: none !important;
+}
+
+.membersTableHeader {
+    text-shadow: 1px 1px 5px skyblue;
+    white-space: nowrap;
+}
+
+.tableHeaderCell {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.tableHeaderCellText {
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.membersTableCell {
+    padding: 20px;
+}
+
+.memberBoardWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #adc9cd;
+    border-style: solid;
+    border-width: 6px;
+    border-radius: 10px;
+    border-color: #6c7b7d;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+
+.memberBoardWrapper:active {
+    border-bottom-width: 4px;
+}
+
+.tableCell {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.memberPfp {
+    height: 4em;
+    width: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.positionEmblem {
+    height: 60px;
+    width: auto;
+}
+
+.positionEmblemWrapper {
+    min-width: 120px;
+}
+
+.rankEmblemWrapper {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 60%;
+}
+
+.ranktableColumn {
+    position: relative;
+    top: 20px;
+}
+
+.rankEmblemtableColumn {
+    height: 4em;
+    width: auto;
+    position: relative;
+    bottom: 5px;
+    justify-self: center;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+}
+
+.expandArrowIcon {
+    margin-left: auto;
+    font-size: 2em;
+    color: rgb(79, 79, 79);
+}
+
+.gameCountText {
+    position: relative;
+    top: 8px;
+    font-size: smaller;
+    margin-left: 5px;
+    font-weight: 300;
+}
+
+.winrateHighlightRed {
+    text-shadow: 1px 1px 1px rgba(255, 101, 101, 0.708);
+}
+
+.winrateHighlightYellow {
+    text-shadow: 1px 1px 1px rgba(255, 196, 68, 0.632);
+}
+
+.winrateHighlightGreen {
+    text-shadow: 1px 1px 1px rgba(90, 223, 37, 0.574);
+}
+
+.noWrapText {
+    white-space: nowrap;
+}
+
+.inviteCodeSearchBar {
+    width: 90%;
+    padding: 10px;
+    margin: 0;
+    background-color: white;
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 5px white;
+}
+
+.inviteCodeSearchBar:focus {
+    outline-width: 0;
+    outline: none;
+    box-shadow: 0px 0px 10px white;
+}
+
+.iconHighlight {
+    box-shadow: 0px 0px 10px white;
+}
+
+.roleIconImg {
+    height: 3em;
+    width: auto;
+}
+
+.resetRolesQueryButton {
+    font-size: 2em;
+}
+
+.resetRolesQueryButtonWrapper {
+    padding: 10px;
+    background-color: #356d85;
+    border-style: outset;
+    border-color: #0d2732c1;
+    box-shadow: 0px 7px 10px black;
+    border-width: 7px;
+    border-radius: 60%;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+}
+
+.resetRolesQueryButtonWrapper:active {
+    background-color: rgba(72, 138, 169, 0.757);
+    border-bottom-width: 3px;
+    box-shadow: 0px 3px 4px black;
+}
+
+.resetRolesQueryButtonWrapper:hover {
+    background-color: rgba(72, 138, 169, 0.757);
+}
+
+.resetRolesQueryButton path {
+    stroke: white;
+}
+
+.FilterWrapper {
+    width: 80%;
+    padding: 30px;
+    background-color: #204f63;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    border-style: inset;
+    border-width: 4px;
+    border-color: #5181a67f;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 40px black;
+    background-image: url("../Textures/black-felt.png");
+}
+
+.FilterWrapper > div:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.filterDetailsWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.subFilterWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.positionsFilterWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.quickJoinFilterWrapper {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.filterLabel {
+    color: white;
+    margin-right: 20px;
+    white-space: nowrap;
+    text-shadow: 0 0 1px #fff, 0 0 2px #d2d2d2, 0 0 3px rgb(139, 139, 139);
+}
+
+.RolesQueryIcons {
+    border-style: inset;
+    border-color: #2a5a71c1;
+    border-width: 3px;
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+    border-radius: 30px;
+    background-color: #194052c1;
+    box-shadow: inset 0px 0px 30px black;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+.RolesQueryIcons img:not(:last-child) {
+    margin-right: 15px;
+}
+
+.teamsListSectionDivide {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionTitleYellow {
+    white-space: nowrap;
+    text-shadow: 0 0 2px #fff, 0 0 5px #faff91aa, 0 0 7px #fffa5cab,
+        0 0 9px #fff132b5, 0 0 11px #ffe100ae;
+}
+
+.sectionTitleDividerBarsYellow {
+    width: 45%;
+    border-top: 3px solid white;
+    box-shadow: 0 0 2px #fff, 0 0 5px #faff91aa, 0 0 7px #fffa5cab,
+        0 0 9px #fff132b5, 0 0 11px #ffe100ae;
+}
+
+.sectionTitleIconYellow {
+    font-size: 2em;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.sectionTitleIconYellow path {
+    stroke: white;
+    color: white;
+}
+
+.NoMatchesSign {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-shadow: 0px 0px 10px white;
+    align-self: center;
+}
+
+.UserTeamsWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.quickJoinButton {
+    background-color: #284e60;
+    border-color: white;
+    border-width: 4px;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+    white-space: nowrap;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.openTeamsWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tableCellWrapper {
+    text-align: center;
+}
+
+.teamsListGetNextButton {
+    margin-top: 40px;
+    width: 70%;
+    font-size: 1.7em;
+    padding: 15px;
+    color: white;
+    background-color: #76bce586;
+    border-radius: 10px;
+    white-space: nowrap;
+    border: none;
+}
+
+.teamsListGetNextButton:hover {
+    background-color: #9fd1ed86;
+}
+
+.teamsListGetNextButton:active {
+    background-color: #83a7bc86;
+}

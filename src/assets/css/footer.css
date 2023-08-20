@@ -1,0 +1,23 @@
+.footerWrapper {
+    height: 20vh;
+    width: 100%;
+    background-color: #212529;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerLink:hover {
+    cursor: pointer;
+}
+
+.footerMargin {
+    margin-top: 40px;
+}
+
+.discordSymbol {
+    font-size: 1.5em;
+    position: relative;
+    bottom: 2px;
+}

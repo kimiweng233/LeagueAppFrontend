@@ -1,0 +1,802 @@
+.tournamentMenuWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tournamentBracketCardOuterWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tournamentBracketCardOuterBorder {
+    width: 90%;
+    height: 65%;
+    border-style: outset;
+    border-width: 5px;
+    border-color: #7daec5;
+    box-shadow: 2px 3px 15px #021925;
+    display: flex;
+    flex-direction: row;
+}
+
+.tournamentBracketCardWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #37677d;
+    border-style: inset;
+    border-width: 3px;
+    border-color: #91bbcf;
+    box-shadow: inset 0px 0px 10px black;
+}
+
+.summonerTeamGameHighlight {
+    box-shadow: 0 0 10px #fff, 0 0 12px #65d2f0, 0 0 13px #2483ab,
+        0 0 14px #176682;
+}
+
+.ongoingGameHighlight {
+    box-shadow: 0 0 5px #fff, 0 0 7px #d0f065, 0 0 9px #99ab24, 0 0 15px #648217;
+}
+
+.idleGameHighlight {
+    background-color: #47788f56 !important;
+}
+
+.tournamentBracketTeamWrapper {
+    width: 95%;
+    height: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.tournamentBracketTeamWrapper:hover .tournamentBracketTeamCard {
+    background-color: #a7c5d2 !important;
+    cursor: pointer;
+}
+
+.tournamentBracketTeamWrapper:hover .tournamentBracketScoreCard {
+    background-color: #39678a !important;
+}
+
+.tournamentBracketTeamWrapper:hover .tournamentBracketTeamWinHighlight {
+    background-color: #1a658baf !important;
+}
+
+.tournamentBracketTeamWrapper:hover .tournamentBracketScoreWinHighlight {
+    background-color: #133a58a3 !important;
+}
+
+.tournamentBracketTeamWrapper:hover .tournamentBracketTeamLossHighlight {
+    background-color: #d3909062 !important;
+}
+
+.tournamentBracketTeamWrapper:hover .tournamentBracketScoreLossHighlight {
+    background-color: #8633336d !important;
+}
+
+.tournamentBracketTeamWrapper:not(:last-child) {
+    margin-bottom: 3px;
+}
+
+.tournamentBracketTeamCard {
+    height: 100%;
+    width: 75%;
+    background-color: #81abbe;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tournamentBracketScoreCard {
+    height: 100%;
+    width: 25%;
+    background-color: #294f6d;
+    text-align: center;
+    vertical-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tournamentBracketTeamText {
+    margin-left: 10px !important;
+}
+
+.tournamentBracketText {
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 0 1px #fff, 0 0 2px #a3ddff, 0 0 3px #65bdf0, 0 0 4px #2458ab,
+        0 0 5px #174082, 0 0 6px #0c2c61;
+}
+
+.tournamentBracketTeamWinHighlight {
+    background-color: #145170af !important;
+}
+
+.tournamentBracketTeamLossHighlight {
+    background-color: #be818162 !important;
+}
+
+.tournamentBracketScoreWinHighlight {
+    background-color: #0c263aa3 !important;
+}
+
+.tournamentBracketScoreLossHighlight {
+    background-color: #6d29296d !important;
+}
+
+.tournamentBracketViewPort {
+    width: 70vw;
+    height: 80vh;
+    border: 5px;
+    border-style: inset;
+    border-color: #4169877f;
+    border-radius: 2px;
+    box-shadow: inset 0px 0px 60px #000000;
+    background-color: #1b3f52;
+    background-image: url("../Textures/black-felt.png");
+    padding: 20px;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.tournamentBracketViewPort::-webkit-scrollbar {
+    width: 0;
+}
+
+.flexBoxColumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg line {
+    filter: drop-shadow(0px 0px 1px #ffffff6a)
+        drop-shadow(0px 0px 2px #65bdf07a) drop-shadow(0px 0px 3px #2458ab7a)
+        drop-shadow(0px 0px 4px #17408272) drop-shadow(0px 0px 5px #0c2d6174);
+}
+
+.bracketMatchSignWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bracketMatchSign {
+    font-style: italic;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 0 1px #fff, 0 0 2px #d2d2d2, 0 0 3px rgb(139, 139, 139);
+}
+
+.bracketCrossedSwords {
+    position: relative;
+    bottom: 2px;
+}
+
+.tournamentMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    background-color: #284e60;
+    padding: 60px;
+    margin-top: 50px;
+    border-style: solid;
+    border-color: #def4ff;
+    border-radius: 25px;
+    border-width: 5px;
+    box-shadow: 0 0 20px #fff, 0 0 30px #65bdf0, 0 0 40px #2458ab,
+        0 0 50px #174082, 0 0 60px #0c2c61, inset 0 0 5px #fff,
+        inset 0 0 20px #65bdf0, inset 0 0 9px #2458ab, inset 0 0 11px #174082,
+        inset 0 0 13px #0c2c61;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.titleLeftMargin {
+    margin-left: 20px;
+}
+
+.titleRightMargin {
+    margin-right: 20px;
+}
+
+.bracketDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    gap: 10px;
+}
+
+.bracketDescriptionRow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bracketDescriptionTitle {
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 0 1px #fff, 0 0 2px #d2d2d2, 0 0 3px rgb(139, 139, 139);
+    white-space: nowrap;
+}
+
+.bracketDescriptionInfoTextWrapper {
+    margin-left: 10px;
+    flex-grow: 1;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.bracketDescriptionInfoText {
+    margin: 0;
+    padding: 0;
+}
+
+.bracketDescriptionInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 45%;
+}
+
+.bracketWatchLiveButton {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 2px;
+    margin-left: 10px;
+    border: 3px solid white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bracketWatchLiveButtonBlueHalo {
+    background-color: #3a96ca;
+    box-shadow: 0 0 5px #fff, 0 0 7px #65bdf0, 0 0 9px #2458ab, 0 0 11px #174082,
+        0 0 13px #0c2c61, inset 0 0 3px #fff, inset 0 0 5px #65bdf0,
+        inset 0 0 7px #2458ab, inset 0 0 9px #174082;
+}
+
+.bracketWatchLiveButtonGreyHalo {
+    background-color: #d8d8d8;
+    box-shadow: 0 0 5px #9f9f9f, 0 0 7px #757575, 0 0 9px #8f8f8f,
+        0 0 11px #767676, inset 0 0 3px #6b6b6b, inset 0 0 5px #ababab,
+        inset 0 0 7px #727272;
+}
+
+.bracketWatchLiveButtonArrow {
+    width: 25px;
+    height: 25px;
+}
+
+.bracketCurrentGameText {
+    margin-left: 10px;
+    background-color: #203c4b;
+    border-color: #296a88;
+    border-style: inset;
+    border-width: 3px;
+    border-radius: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-shadow: inset 0px 0px 20px #000000;
+    text-shadow: 0 0 1px #fff, 0 0 2px #d2d2d2, 0 0 3px rgb(139, 139, 139);
+    white-space: nowrap;
+    position: relative;
+    top: 2px;
+}
+
+.bracketCopyTextButton {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 4px;
+    margin-left: 5px;
+}
+
+.bracketDescriptionWrapper {
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #143442;
+    padding: 20px;
+    margin-top: 50px;
+    border-style: inset;
+    border-width: 4px;
+    border-color: #4169877f;
+    box-shadow: inset 0px 0px 30px black;
+    background-image: url("../Textures/black-felt.png");
+}
+
+.bracketTournamentDescriptionTitle {
+    margin-right: auto;
+}
+
+.bracketTournamentDescriptiontWrapper {
+    width: 100%;
+    flex-grow: 1;
+    text-align: left;
+    min-height: 200px;
+    padding: 10px;
+    background-image: url("../Textures/black-felt.png");
+    background-color: #203c4b;
+    border-color: #285367;
+    border-style: inset;
+    border-width: 3px;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 20px #060a0b;
+    font-style: italic;
+}
+
+.greyTextHalo {
+    text-shadow: 0 0 5px #e9e9e9, 0 0 7px #a2a2a2, 0 0 9px #787878,
+        0 0 11px #5b5b5b, 0 0 13px #3b3b3b, 0 0 15px #262626;
+}
+
+.cursorPointer {
+    cursor: pointer;
+}
+
+.tournamentNotStartedSignWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.topMargin {
+    margin-top: 20px;
+}
+
+.whitespaceWrap {
+    white-space: wrap !important;
+    text-align: center;
+}
+
+.tournamentAdminBracketTeamCard {
+    height: 100%;
+    flex-grow: 1;
+    background-color: #81abbe;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tournamentAdminBracketScoreCard {
+    height: 100%;
+    width: 12%;
+    background-color: #294f6d;
+    text-align: center;
+    vertical-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tournamentAdminBracketTeamText {
+    margin: 0px;
+    padding: 0px;
+    font-size: 2em;
+}
+
+.tournamentAdminBracketTeamMinusText {
+    position: relative;
+    bottom: 2px;
+}
+
+.tournamentAdminBracketButton {
+    width: 12%;
+    height: 100%;
+    border: none;
+    text-align: center;
+    padding: 0px;
+    font-size: 15px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tournamentAdminBracketPlusButton {
+    background-color: rgb(132, 213, 108);
+}
+
+.tournamentAdminBracketPlusButton:hover {
+    background-color: rgb(169, 246, 145);
+}
+
+.tournamentAdminBracketMinusButton {
+    background-color: rgb(184, 78, 49);
+}
+
+.tournamentAdminBracketMinusButton:hover {
+    background-color: rgb(218, 112, 82);
+}
+
+.tournamentAdminBracketCrownButton {
+    background-color: rgb(229, 221, 71);
+    border-style: inset;
+    border-width: 3px;
+    border-color: #91bbcf;
+    box-shadow: inset 0px 0px 4px black;
+}
+
+.tournamentAdminBracketCrownButton:hover {
+    background-color: rgb(255, 249, 139);
+}
+
+.tournamentAdminBracketCardWrapper {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #37677d;
+    border-style: inset;
+    border-width: 3px;
+    border-color: #91bbcf;
+    box-shadow: inset 0px 0px 10px black;
+}
+
+.endTournamentButton {
+    color: white;
+    margin-top: 30px;
+    border-style: outset;
+    border-color: #c54c3d;
+    border-width: 3px;
+    background-color: #b13f2f;
+    font-size: 1.3em;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.endTournamentButton:hover {
+    background-color: #bf4839;
+}
+
+.endTournamentCard {
+    width: 40%;
+    height: 35%;
+    background-color: #284e60;
+    border-style: solid;
+    border-color: #def4ff;
+    border-radius: 25px;
+    border-width: 5px;
+    box-shadow: 0 0 20px #fff, 0 0 30px #65bdf0, 0 0 40px #2458ab,
+        0 0 50px #174082, 0 0 60px #0c2c61, inset 0 0 5px #fff,
+        inset 0 0 20px #65bdf0, inset 0 0 9px #2458ab, inset 0 0 11px #174082,
+        inset 0 0 13px #0c2c61;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.endTournamentCardExit {
+    color: black;
+    font-size: 2.5em;
+    margin-left: auto;
+    margin-right: 10px;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.endTournamentCardExit:hover {
+    color: rgb(192, 192, 192);
+}
+
+.endTournamentCardButtonsRow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.endTournamentCardTextWrapper {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.endTournamentCardCancelButton {
+    background-color: rgb(144, 144, 144);
+    padding: 10px;
+    color: white;
+    border-radius: 12px;
+    border-color: rgb(164, 164, 164);
+    border-width: 3px;
+    font-size: 1.5em;
+    width: 80px;
+}
+
+.endTournamentCardCancelButton:hover {
+    background-color: rgb(163, 163, 163);
+}
+
+.endTournamentCardCancelButton:active {
+    border-style: inset;
+}
+
+.endTournamentCardExitButton {
+    background-color: #c54c3d;
+    padding: 10px;
+    color: white;
+    border-radius: 12px;
+    border-color: #c54c3d;
+    border-width: 3px;
+    background-color: #b13f2f;
+    font-size: 1.5em;
+    width: 80px;
+}
+
+.endTournamentCardExitButton:hover {
+    background-color: #d65a4a;
+}
+
+.endTournamentCardExitButton:active {
+    border-style: inset;
+}
+
+.endTournamentCardText {
+    text-shadow: 0 0 3px #fff, 0 0 4px #a3ddff, 0 0 5px #65bdf0, 0 0 6px #2458ab,
+        0 0 7px #174082, 0 0 8px #0c2c61;
+    color: white;
+    white-space: break-spaces;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    bottom: 5px;
+}
+
+.tournamentPlanningInputRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.tournamentPlanningTableWrapper {
+    width: 100%;
+}
+
+.tournamentPlanningLabelInputWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+}
+
+.tournamentPlanningTable {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.tournamentPlanningTableDivider {
+    border-top: 3px solid white;
+    width: 300%;
+    box-shadow: 0 0 10px #fff, 0 0 20px #a3ddff, 0 0 30px #65bdf0,
+        0 0 40px #2458ab, 0 0 50px #174082, 0 0 60px #0c2c61;
+}
+
+.tournamentPlanningTableBottomDivider {
+    border-top: 3px solid white;
+    width: 100%;
+    box-shadow: 0 0 10px #fff, 0 0 20px #a3ddff, 0 0 30px #65bdf0,
+        0 0 40px #2458ab, 0 0 50px #174082, 0 0 60px #0c2c61;
+}
+
+.tournamentPlanningTable th {
+    font-size: 1.5em;
+    padding: 10px;
+    text-shadow: 0px 0px 5px white;
+}
+
+.deletingTeamFont {
+    color: rgb(156, 156, 156) !important;
+    text-shadow: 0px 0px 4px rgb(67, 67, 67) !important;
+}
+
+.tournamentPlanningCrossButton {
+    color: #e15341;
+}
+
+.tournamentPlanningCrossButton:hover {
+    color: #8f392e;
+}
+
+.tournamentPlanningAdmitButton {
+    color: #679764;
+    font-size: 1.2em;
+    position: relative;
+    bottom: 2px;
+}
+
+.tournamentPlanningAdmitButton:hover {
+    color: #4f7b4c;
+}
+
+.tournamentPlanningTable tbody tr:hover {
+    background-color: #dbe8fb24;
+}
+
+.tournamentPlanningTableTitleWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.formInputFieldPlusButton {
+    font-size: 2.2em;
+    position: relative;
+    top: 2px;
+}
+
+.formInputFieldPlusButton:hover {
+    cursor: pointer;
+    color: rgb(157, 157, 157);
+}
+
+.noMargin {
+    margin: 0px;
+    padding: 0px;
+}
+
+.tournamentPlanningteamInput {
+    height: 1.5em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px white;
+    outline: none;
+    padding: 5px;
+}
+
+.tournamentPlanningteamInput:hover {
+    box-shadow: 0px 0px 10px white;
+}
+
+.tournamentPlanningteamInput::placeholder {
+    color: rgba(129, 129, 129, 0.352);
+    font-style: italic;
+    margin: 0px;
+    padding: 0px;
+}
+
+.tournamentPlanningButtonsRow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tournamentPlanningButton {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.tournamentPlanningCreateButton {
+    background-color: #4198c0;
+}
+
+.tournamentPlanningCreateButton:hover {
+    background-color: #54afd9;
+}
+
+.tournamentPlanningCancelButton {
+    background-color: #c54c3d;
+}
+
+.tournamentPlanningCancelButton:hover {
+    background-color: #e46858;
+}
+
+.tournamentPlanningDividerColumn {
+    padding: 0px !important;
+}
+
+.tournamentPlanningPendingText {
+    display: inline;
+    text-transform: none;
+    font-style: italic;
+    text-shadow: none;
+    color: rgb(238, 226, 60);
+    font-size: 0.8em;
+}
+
+.tournamentPlanningSaveTeamSettingsButtonWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.tournamentPlanningSaveTeamSettingsButton {
+    margin: 5px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1.5em;
+}
+
+.tournamentPlanningSaveTeamSettingsButton:hover {
+    text-shadow: 0 0 10px #fff, 0 0 13px #a3ddff, 0 0 16px #65bdf0,
+        0 0 19px #2458ab, 0 0 21px #174082, 0 0 24px #0c2c61 !important;
+}
+
+.tournamentPlanningStartTournamentButton {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.tournamentPlanningSaveButton {
+    position: relative;
+    bottom: 2px;
+    min-width: 80px;
+    color: white;
+    border-style: outset;
+    border-color: #3d5b6e;
+    border-width: 3px;
+    background-color: #253e4f;
+    font-size: 1.3em;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.tournamentPlanningSaveButton:hover {
+    background-color: #375569;
+}
+
+.tournamentPlanningSaveButton:active {
+    background-color: rgb(40, 65, 82);
+    border-style: inset;
+}
