@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/LeagueAppFrontend/static/css/main.6624fe84.css",
+    "main.js": "/LeagueAppFrontend/static/js/main.51f56cde.js",
+    "static/media/png": "/LeagueAppFrontend/static/media/169068775628406925.dc4cc07144d671cc4449.png",
+    "static/media/emblem-challenger.png": "/LeagueAppFrontend/static/media/emblem-challenger.9f3738fd8e2cf88fd2f3.png",
+    "static/media/emblem-grandmaster.png": "/LeagueAppFrontend/static/media/emblem-grandmaster.6ff417a560053cbd5f0d.png",
+    "static/media/emblem-master.png": "/LeagueAppFrontend/static/media/emblem-master.f8e6404e6696b39011bd.png",
+    "static/media/emblem-diamond.png": "/LeagueAppFrontend/static/media/emblem-diamond.52d534e11773a841dc58.png",
+    "static/media/emblem-gold.png": "/LeagueAppFrontend/static/media/emblem-gold.84fd0ab240067b49bba7.png",
+    "static/media/emblem-platinum.png": "/LeagueAppFrontend/static/media/emblem-platinum.8343a728ae87cb313f4d.png",
+    "static/media/emblem-silver.png": "/LeagueAppFrontend/static/media/emblem-silver.97443ff1aa477309b246.png",
+    "static/media/black-felt.png": "/LeagueAppFrontend/static/media/black-felt.1c6ed4e3e55954cf8702.png",
+    "static/media/emblem-bronze.png": "/LeagueAppFrontend/static/media/emblem-bronze.f245d3522ebbcf4651ce.png",
+    "static/media/emblem-iron.png": "/LeagueAppFrontend/static/media/emblem-iron.8c28d97f71aa10b4216b.png",
+    "static/media/mastery-7.png": "/LeagueAppFrontend/static/media/mastery-7.b63d7cde270ca711da03.png",
+    "static/media/mastery-6.png": "/LeagueAppFrontend/static/media/mastery-6.de430b25e0ca1e31e19d.png",
+    "static/media/srbg.jpg": "/LeagueAppFrontend/static/media/srbg.80b01c148a85214e56e7.jpg",
+    "static/media/mastery-5.png": "/LeagueAppFrontend/static/media/mastery-5.33cdbfe538472dd8bf69.png",
+    "static/media/mastery-4.png": "/LeagueAppFrontend/static/media/mastery-4.7fd474baf13a2e31b0b4.png",
+    "static/media/Position_Challenger-Jungle.png": "/LeagueAppFrontend/static/media/Position_Challenger-Jungle.3216086db0fa22b078be.png",
+    "static/media/Position_Iron-Jungle.png": "/LeagueAppFrontend/static/media/Position_Iron-Jungle.a98efc2a244a5a2aba3f.png",
+    "static/media/mastery-3.png": "/LeagueAppFrontend/static/media/mastery-3.73c20e0e084f9f192067.png",
+    "index.html": "/LeagueAppFrontend/index.html",
+    "main.6624fe84.css.map": "/LeagueAppFrontend/static/css/main.6624fe84.css.map",
+    "main.51f56cde.js.map": "/LeagueAppFrontend/static/js/main.51f56cde.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6624fe84.css",
+    "static/js/main.51f56cde.js"
+  ]
+}
