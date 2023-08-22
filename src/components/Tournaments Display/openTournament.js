@@ -56,7 +56,7 @@ function OpenTournament(props) {
                 if (
                     !(props.alreadyJoined || props.teamsNum >= props.teamsCap)
                 ) {
-                    navigate(`/createTeam?tournamentID=${props.id}`);
+                    navigate(`/#/createTeam?tournamentID=${props.id}`);
                 }
             },
             alreadyJoined: props.alreadyJoined,
@@ -91,7 +91,7 @@ function OpenTournament(props) {
         return {
             onClick: (event) => {
                 event.stopPropagation();
-                navigate(`/teams?tournamentID=${props.id}`);
+                navigate(`/#/teams?tournamentID=${props.id}`);
             },
         };
     };

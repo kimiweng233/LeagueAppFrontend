@@ -128,9 +128,9 @@ function TeamsList() {
             }),
         onSuccess: (data) => {
             if (data["message"] == "Joined Team") {
-                navigate(`/team?teamID=${data["id"]}`);
+                navigate(`/#/team?teamID=${data["id"]}`);
             } else if (data["message"] == "Created Team") {
-                navigate(`/team?teamID=${data["id"]}`);
+                navigate(`/#/team?teamID=${data["id"]}`);
             } else if (data["message"] == "Sent Requests") {
                 setShowAlert(true);
                 queryClient.setQueryData(
@@ -164,7 +164,7 @@ function TeamsList() {
             tournamentData.teams.length < tournamentData.teamsCap
         ) {
             navigate(
-                `/createTeam?tournamentID=${searchParams.get("tournamentID")}`
+                `/#/createTeam?tournamentID=${searchParams.get("tournamentID")}`
             );
         }
     };

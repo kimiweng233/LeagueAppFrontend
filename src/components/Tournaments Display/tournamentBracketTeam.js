@@ -22,9 +22,9 @@ function TournamentBracketTeam(props) {
                 onClick={() => {
                     if (team) {
                         if (team["Name"] == summonerTeam) {
-                            navigate(`/team?teamID=${team["id"]}`);
+                            navigate(`/#/team?teamID=${team["id"]}`);
                         } else {
-                            navigate(`/teamInfo?teamID=${team["id"]}`);
+                            navigate(`/#/teamInfo?teamID=${team["id"]}`);
                         }
                     }
                 }}

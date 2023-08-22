@@ -35,7 +35,7 @@ const AppNavbar = () => {
 
     const logout = () => {
         localStorage.removeItem("summonerID");
-        window.location.href = "/linkAccount";
+        window.location.href = "/#/linkAccount";
     };
 
     return (
@@ -49,7 +49,7 @@ const AppNavbar = () => {
                 sticky="top"
             >
                 <Container>
-                    <Navbar.Brand href="/" style={{ fontSize: "1.3em" }}>
+                    <Navbar.Brand href="/#/" style={{ fontSize: "1.3em" }}>
                         <img
                             src="https://cdn.discordapp.com/icons/745073887171313736/2ce80930ac31de1e9842cd72f9828a8a.webp?size=240"
                             alt="Server Icon"
@@ -64,7 +64,7 @@ const AppNavbar = () => {
                     <Navbar.Collapse>
                         <Nav className="me-auto">
                             <Nav.Link
-                                href="/"
+                                href="/#/"
                                 style={{ fontSize: "1.3em" }}
                                 className="navText"
                             >
@@ -72,7 +72,7 @@ const AppNavbar = () => {
                             </Nav.Link>
                             {localStorage.getItem("summonerID") != null && (
                                 <Nav.Link
-                                    href="/tournaments"
+                                    href="/#/tournaments"
                                     style={{ fontSize: "1.3em" }}
                                     className="navText"
                                 >
@@ -81,7 +81,7 @@ const AppNavbar = () => {
                             )}
                             {localStorage.getItem("summonerID") != null && (
                                 <Nav.Link
-                                    href="/joinedTeams"
+                                    href="/#/joinedTeams"
                                     style={{ fontSize: "1.3em" }}
                                     className="navText"
                                 >
@@ -91,7 +91,7 @@ const AppNavbar = () => {
                             {localStorage.getItem("summonerID") != null &&
                                 localStorage.getItem("role") == "admin" && (
                                     <Nav.Link
-                                        href="/createTournament"
+                                        href="/#/createTournament"
                                         style={{ fontSize: "1.3em" }}
                                         className="navText"
                                     >
@@ -101,7 +101,7 @@ const AppNavbar = () => {
                             {localStorage.getItem("summonerID") != null &&
                                 localStorage.getItem("role") == "admin" && (
                                     <Nav.Link
-                                        href="/dashboard"
+                                        href="/#/dashboard"
                                         style={{ fontSize: "1.3em" }}
                                         className="navText"
                                     >
@@ -120,7 +120,7 @@ const AppNavbar = () => {
                                         }}
                                         onClick={() =>
                                             (window.location.href =
-                                                "/linkAccount")
+                                                "/#/linkAccount")
                                         }
                                         className="navText"
                                     >
@@ -135,7 +135,7 @@ const AppNavbar = () => {
                                         }}
                                         onClick={() =>
                                             (window.location.href =
-                                                "/linkAccount")
+                                                "/#/linkAccount")
                                         }
                                         className="navText"
                                     >

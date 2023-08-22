@@ -69,7 +69,7 @@ const TeamCardTemp = (props) => {
                     teamID: props.id,
                 }),
             onSuccess: () => {
-                navigate(`/team?teamID=${props.id}`);
+                navigate(`/#/team?teamID=${props.id}`);
             },
         });
 

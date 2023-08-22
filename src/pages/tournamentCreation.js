@@ -41,7 +41,7 @@ function TournamentForm() {
                 teams: [],
             }),
         onSuccess: (data) => {
-            navigate(`/tournamentPlanning?tournamentID=${data}`);
+            navigate(`/#/tournamentPlanning?tournamentID=${data}`);
         },
         onError: (error) => {
             setAlertMessage(error.response.data);

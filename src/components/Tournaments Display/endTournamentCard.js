@@ -22,7 +22,7 @@ function EndTournamentCard(props) {
                     tournamentID: searchParams.get("tournamentID"),
                 }),
             onSuccess: () => {
-                navigate("/dashboard");
+                navigate("/#/dashboard");
             },
         });
 

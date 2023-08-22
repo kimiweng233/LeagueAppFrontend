@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -26,7 +26,7 @@ function App() {
 
     return (
         <QueryClientProvider client={queryClient}>
-            <HashRouter basename="/#">
+            <HashRouter basename="/">
                 <div className="appContentWrapper">
                     <div className="appContentInnerWrapper">
                         <AppNavbar />

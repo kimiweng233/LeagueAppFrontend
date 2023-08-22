@@ -103,7 +103,7 @@ function TournamentPlanning() {
                 }),
             onSuccess: () => {
                 navigate(
-                    `/tournamentDashboard?tournamentID=${searchParams.get(
+                    `/#/tournamentDashboard?tournamentID=${searchParams.get(
                         "tournamentID"
                     )}`
                 );

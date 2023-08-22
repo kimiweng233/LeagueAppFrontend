@@ -59,7 +59,7 @@ function TeamInvite() {
                 teamID: searchParams.get("teamID"),
             }),
         onSuccess: () => {
-            navigate(`/team?teamID=${searchParams.get("teamID")}`);
+            navigate(`/#/team?teamID=${searchParams.get("teamID")}`);
         },
         onError: (error) => {
             setAlertMessage(error.response.data);

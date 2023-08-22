@@ -42,7 +42,7 @@ const TeamListing = React.forwardRef((props, ref) => {
                     teamID: props.id,
                 }),
             onSuccess: () => {
-                navigate(`/team?teamID=${props.id}`);
+                navigate(`/#/team?teamID=${props.id}`);
             },
         });
 

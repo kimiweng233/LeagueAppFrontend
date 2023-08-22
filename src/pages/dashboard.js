@@ -43,7 +43,7 @@ const Dashboard = () => {
                             <a
                                 className="dashboardLink"
                                 key={i}
-                                href={`/tournamentPlanning?tournamentID=${tournament.id}`}
+                                href={`/#/tournamentPlanning?tournamentID=${tournament.id}`}
                             >
                                 {tournament.tournamentName}
                             </a>
@@ -56,7 +56,7 @@ const Dashboard = () => {
                             <a
                                 className="dashboardLink"
                                 key={i}
-                                href={`/tournamentDashboard?tournamentID=${tournament.id}`}
+                                href={`/#/tournamentDashboard?tournamentID=${tournament.id}`}
                             >
                                 {tournament.tournamentName}
                             </a>
