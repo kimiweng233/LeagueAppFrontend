@@ -26,7 +26,7 @@ function App() {
 
     return (
         <QueryClientProvider client={queryClient}>
-            <HashRouter basename="/">
+            <HashRouter>
                 <div className="appContentWrapper">
                     <div className="appContentInnerWrapper">
                         <AppNavbar />
