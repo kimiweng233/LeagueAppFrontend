@@ -42,7 +42,7 @@ function TeamForm() {
                 summonerID: localStorage.getItem("summonerID"),
             }),
         onSuccess: (data) => {
-            navigate(`/#/team?teamID=${data}`);
+            navigate(`/team?teamID=${data}`);
         },
         onError: (error) => {
             setAlertMessage(error.response.data);

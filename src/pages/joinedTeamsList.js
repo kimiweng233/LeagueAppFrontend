@@ -65,7 +65,7 @@ function JoinedTeams() {
                                             key={i}
                                             onClick={() =>
                                                 navigate(
-                                                    `/#/team?teamID=${team["teamData"].id}`
+                                                    `/team?teamID=${team["teamData"].id}`
                                                 )
                                             }
                                         >

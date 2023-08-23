@@ -11,7 +11,7 @@ function UserTeam(props) {
 
     const viewTeamFunc = (props) => {
         return {
-            onClick: () => navigate(`/#/team?teamID=${props.id}`),
+            onClick: () => navigate(`/team?teamID=${props.id}`),
         };
     };
 

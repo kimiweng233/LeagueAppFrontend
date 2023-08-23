@@ -107,7 +107,7 @@ function TeamMenu(props) {
                     teamID: searchParams.get("teamID"),
                 }),
             onSuccess: () => {
-                navigate(`/#/teams?tournamentID=${teamData["tournament"]}`);
+                navigate(`/teams?tournamentID=${teamData["tournament"]}`);
             },
             onError: (error) => {
                 setAlertMessage(error.response.data);

@@ -19,7 +19,7 @@ function LeagueLogin() {
 
     useEffect(() => {
         if (localStorage.getItem("summonerID") !== null) {
-            navigate("/#/");
+            navigate("/");
         }
     }, [navigate]);
 
@@ -33,9 +33,7 @@ function LeagueLogin() {
         onSuccess: (summonerData) => {
             localStorage.setItem("summonerID", summonerID);
             localStorage.setItem("role", summonerData);
-            navigate(
-                location?.state?.prevUrl ? location?.state?.prevUrl : "/#/"
-            );
+            navigate(location?.state?.prevUrl ? location?.state?.prevUrl : "/");
         },
         onError: (error) => {
             setAlertMessage(error.response.data);

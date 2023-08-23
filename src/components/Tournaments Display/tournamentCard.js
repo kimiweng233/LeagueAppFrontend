@@ -10,7 +10,7 @@ const TournamentCard = (ButtonsList) => {
             <div
                 className="tournamentCard"
                 onClick={() =>
-                    navigate(`/#/tournamentPage?tournamentID=${props.id}`)
+                    navigate(`/tournamentPage?tournamentID=${props.id}`)
                 }
             >
                 <div className="tournamentTitle">
